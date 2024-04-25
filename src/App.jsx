@@ -3027,31 +3027,6 @@ function App() {
     }
     });
 
-  //   const [astroData, setAstroData] = useState({
-  //     "location": {
-  //         "name": "Chennai",
-  //         "region": "Tamil Nadu",
-  //         "country": "India",
-  //         "lat": 13.08,
-  //         "lon": 80.28,
-  //         "tz_id": "Asia/Kolkata",
-  //         "localtime_epoch": 1713979565,
-  //         "localtime": "2024-04-24 22:56"
-  //     },
-  //     "astronomy": {
-  //         "astro": {
-  //             "sunrise": "05:51 AM",
-  //             "sunset": "06:23 PM",
-  //             "moonrise": "06:46 PM",
-  //             "moonset": "05:51 AM",
-  //             "moon_phase": "Full Moon",
-  //             "moon_illumination": 100,
-  //             "is_moon_up": 1,
-  //             "is_sun_up": 0
-  //         }
-  //     }
-  // });
-
   const [isLoading, setIsLoading] = useState(null)
   const [searchLocation, setSearchLocation] = useState()
   useEffect(() => {
@@ -3060,10 +3035,6 @@ function App() {
       let api = await fetch("https://api.weatherapi.com/v1/forecast.json?key=69e811c87ddc49a985963910242404&q=chennai&days=3&aqi=no&alerts=no");
       let res = await api.json();
       setLocation(res);
-      // let astro_api = await fetch("https://api.weatherapi.com/v1/astronomy.json?key=69e811c87ddc49a985963910242404&q=chennai&dt=2024-04-24");
-      // let astro_res = await astro_api.json();
-      // setAstroData(astro_res);
-      // console.log(res);
       setIsLoading(false)
     }
 
