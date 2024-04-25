@@ -8,7 +8,7 @@ import pressure from "../assets/images/pressure.svg"
 import uv from "../assets/images/uv.svg"
 
 const CurrentTemp = ({location}) => {
-    console.log(location);
+    // console.log(location);
     // console.log(location.forecast.forecastday[0].day.avgtemp_c);
     let timeStamp = location.location.localtime.split(" ")[0];
     let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
