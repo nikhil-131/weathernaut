@@ -16,10 +16,6 @@ const Forecast = ({ location }) => {
         let userFullDate = weekdays[userDay - 1] + ", " + userDate + " " + months[userMonth];
         return userFullDate
     }
-    // console.log(location.forecast.forecastday[0].hour[9].time.split(" ")[1]);
-    // console.log(location.forecast.forecastday[0].hour[9].condition.icon);
-    // console.log(location.forecast.forecastday[0].hour[9].temp_c);
-    // console.log(location.forecast.forecastday[0].hour[9].wind_kph);
 
     return (
         <div className='foreCastContainer xl:px-16 lg:px-10 md:px-8 flex lg:flex-row flex-col justify-center gap-8'>
