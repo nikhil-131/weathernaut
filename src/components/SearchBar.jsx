@@ -25,24 +25,12 @@ const SearchBar = ({location, setLocation, isLoading, setIsLoading}) => {
         setLocation(searchRes);
         setIsLoading(false);
     }
-    
-    // useEffect(() => {
-    //     if(searchAuto.length >0) {
-    //         setVisibleBox(true);
-    //     }
-    //     else {
-    //         setVisibleBox(false)
-    //     }
-    // })
 
     return (
         <div className='searchBarContainer'>
             <div className="search flex md:flex-row flex-col items-center gap-4 py-4 justify-center">
                 <label htmlFor="search" className='relative'>
                     <input onChange={autoSearch} className='border-2 border-black md:w-[40vw] w-[90vw] px-2 py-1.5 rounded-md' type="text" name="search" id="search" value={searchAuto} placeholder='Search for your preffered city...' />
-                    {/* {visibleBox &&
-                        <div className="searchList bg-red-400 w-[40vw] h-[20vh] absolute bottom-[-200%]"></div>
-                    } */}
                 </label>
                 <button onClick={handleSearch} className='bg-green-400 md:w-fit w-[60%] hover:bg-green-500 py-1.5 px-2 rounded-md'>Search</button>
             </div>
