@@ -17,7 +17,7 @@ WeatherNaut is a simple and intuitive weather application designed to provide us
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/myweatherapp.git`
+1. Clone the repository: `git clone https://github.com/nikhil-131/weathernaut.git`
 2. Navigate to the project directory: `cd weathernaut`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
